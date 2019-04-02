@@ -16,5 +16,6 @@ RUN git clone https://github.com/petkov/http_to_mqtt.git ./
 RUN npm install
 
 RUN apt-get -y autoremove git
+RUN apt-get -y clean
 
 CMD node index.js
